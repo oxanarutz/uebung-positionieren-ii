@@ -15,6 +15,7 @@ h1{
 }
 
 section{
+	position: relative;
 	background: lightgrey;
 	border-bottom: 1px solid #000;
 	height: 600px;
@@ -29,6 +30,7 @@ section{
 
 .row{
 	width: 100%;
+	/* bleibt 'cheff' von box, box wird innerhalb des Kartons verschoben */
 }
 
 .col{
@@ -38,20 +40,33 @@ section{
 
 .electric-purple{
 	background: #C200FB;
+	position: absolute;
+	/*position wird verändert, objekt kann verschoben werden*/
+	top: 0;
+	right: 0;
+	z-index: 2;
 }
 
 .raspberry{
 	background: #EC0868;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
 
 }
 
 .ferrari-red{
 	background: #FC2F00;
-
+position:absolute;
+right: 50px;
+top:50px;
+z-index: 3;
 
 }
-
-.ferrari-red{
-	background: #000;
-
+.black{
+	background: black;
+	position: fixed;
+	top: 0;
+	left: 0;
 }
